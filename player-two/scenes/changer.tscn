@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://iww5pws4xx4e"]
+[gd_scene load_steps=3 format=3 uid="uid://iww5pws4xx4e"]
 
 [ext_resource type="Script" uid="uid://sgo55v5e16ow" path="res://scenes/changer.gd" id="1_nwbyl"]
+[ext_resource type="FontFile" uid="uid://bfb6o55ojx2c1" path="res://assets/MedodicaRegular.otf" id="2_i6dsk"]
 
 [node name="changer" type="Control"]
 layout_mode = 3
@@ -17,15 +18,18 @@ layout_mode = 2
 
 [node name="arcade" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_i6dsk")
 text = "arcade
 "
 
 [node name="lan" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_i6dsk")
 text = "lan"
 
 [node name="online" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_i6dsk")
 text = "online
 "
 

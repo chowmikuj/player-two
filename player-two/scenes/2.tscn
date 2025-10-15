@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4wms31c5qq2"]
+[gd_scene load_steps=13 format=3 uid="uid://d4wms31c5qq2"]
 
 [ext_resource type="PackedScene" uid="uid://1wre0js0gt8m" path="res://scenes/lan.tscn" id="1_fbha2"]
 [ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_ui1gg"]
@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://cc6o8nbft11k1" path="res://scenes/npcs/npc10.tscn" id="8_1gqc0"]
 [ext_resource type="PackedScene" uid="uid://crrxxl585kuwu" path="res://scenes/npcs/npc11.tscn" id="9_c68ry"]
 [ext_resource type="PackedScene" uid="uid://iww5pws4xx4e" path="res://scenes/changer.tscn" id="10_7hqdd"]
+[ext_resource type="FontFile" uid="uid://bfb6o55ojx2c1" path="res://assets/MedodicaRegular.otf" id="11_ufdk5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_712et"]
+font = ExtResource("11_ufdk5")
 
 [node name="2" type="Node2D"]
 y_sort_enabled = true
@@ -19,7 +23,7 @@ y_sort_enabled = true
 [node name="player" parent="." instance=ExtResource("2_ui1gg")]
 z_index = 2
 y_sort_enabled = true
-position = Vector2(103, 175)
+position = Vector2(229, 329)
 
 [node name="npc" parent="." instance=ExtResource("3_2fnby")]
 z_index = 2
@@ -67,7 +71,22 @@ y_sort_enabled = true
 position = Vector2(50, 146)
 
 [node name="changer" parent="." instance=ExtResource("10_7hqdd")]
-offset_left = 338.0
-offset_top = -5.0
-offset_right = 338.0
-offset_bottom = -5.0
+offset_left = -68.0
+offset_top = -2.0
+offset_right = -68.0
+offset_bottom = -2.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = -212.0
+offset_top = 85.0
+offset_right = -16.0
+offset_bottom = 234.0
+text = "> lan era (80s - 90s)
+gaming moved into homes,
+where friends linked
+computers and consoles to
+play together. these
+night of teamwork and
+laughter laid the foundation
+for online communities to come."
+label_settings = SubResource("LabelSettings_712et")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dsmgky7bd4mak"]
+[gd_scene load_steps=16 format=3 uid="uid://dsmgky7bd4mak"]
 
 [ext_resource type="PackedScene" uid="uid://blc6b81rehix7" path="res://scenes/arcade.tscn" id="1_i3c8t"]
 [ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_hn15i"]
@@ -12,10 +12,14 @@
 [ext_resource type="PackedScene" uid="uid://dojaxfac6ks22" path="res://scenes/npcs/npc9.tscn" id="10_bqhhf"]
 [ext_resource type="PackedScene" uid="uid://da7ks7ndemub8" path="res://scenes/npcs/npc7.tscn" id="11_1erer"]
 [ext_resource type="PackedScene" uid="uid://iww5pws4xx4e" path="res://scenes/changer.tscn" id="12_hn15i"]
+[ext_resource type="FontFile" uid="uid://bfb6o55ojx2c1" path="res://assets/MedodicaRegular.otf" id="13_31rim"]
 
 [sub_resource type="GDScript" id="GDScript_31rim"]
 script/source = "extends Node2D
 "
+
+[sub_resource type="LabelSettings" id="LabelSettings_wtljo"]
+font = ExtResource("13_31rim")
 
 [node name="1" type="Node2D"]
 y_sort_enabled = true
@@ -24,17 +28,17 @@ script = SubResource("GDScript_31rim")
 [node name="changer" parent="." instance=ExtResource("12_hn15i")]
 z_index = 4
 y_sort_enabled = true
-offset_left = 693.0
-offset_top = 150.0
-offset_right = 693.0
-offset_bottom = 150.0
+offset_left = -72.0
+offset_top = -39.0
+offset_right = -72.0
+offset_bottom = -39.0
 
 [node name="Arcade" parent="." instance=ExtResource("1_i3c8t")]
 
 [node name="player" parent="." instance=ExtResource("2_hn15i")]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(309, 160)
+position = Vector2(144, 75)
 
 [node name="npc" parent="." instance=ExtResource("3_31rim")]
 z_index = 1
@@ -132,3 +136,17 @@ position = Vector2(378, 195)
 z_index = 1
 y_sort_enabled = true
 position = Vector2(406, 24)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -218.0
+offset_top = 48.0
+offset_right = -18.0
+offset_bottom = 178.0
+text = "> arcade era (70s - 80s)
+the hum of machines and
+glow of screens filled arcades
+with energy. players gathered
+side by side, building
+friendships through competition
+and shared excitement."
+label_settings = SubResource("LabelSettings_wtljo")
