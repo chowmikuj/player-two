@@ -1,0 +1,120 @@
+[gd_scene load_steps=12 format=3 uid="uid://dsmgky7bd4mak"]
+
+[ext_resource type="PackedScene" uid="uid://blc6b81rehix7" path="res://scenes/arcade.tscn" id="1_i3c8t"]
+[ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_hn15i"]
+[ext_resource type="PackedScene" uid="uid://bpy0t0bh0eeid" path="res://scenes/npcs/npc.tscn" id="3_31rim"]
+[ext_resource type="PackedScene" uid="uid://d180rrfjq1nce" path="res://scenes/npcs/npc2.tscn" id="4_wtljo"]
+[ext_resource type="PackedScene" uid="uid://b6phagydgrm0s" path="res://scenes/npcs/npc3.tscn" id="5_2dibf"]
+[ext_resource type="PackedScene" uid="uid://ivs3krpdca81" path="res://scenes/npcs/npc4.tscn" id="6_cfl4u"]
+[ext_resource type="PackedScene" uid="uid://cdgnxf0eqbgrh" path="res://scenes/npcs/npc5.tscn" id="7_e2y1k"]
+[ext_resource type="PackedScene" uid="uid://cqc0gqmca8eyp" path="res://scenes/npcs/npc6.tscn" id="8_0t4x5"]
+[ext_resource type="PackedScene" uid="uid://chtrocjqtnfl" path="res://scenes/npcs/npc8.tscn" id="9_ggyvo"]
+[ext_resource type="PackedScene" uid="uid://dojaxfac6ks22" path="res://scenes/npcs/npc9.tscn" id="10_bqhhf"]
+[ext_resource type="PackedScene" uid="uid://da7ks7ndemub8" path="res://scenes/npcs/npc7.tscn" id="11_1erer"]
+
+[node name="1" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Arcade" parent="." instance=ExtResource("1_i3c8t")]
+
+[node name="player" parent="." instance=ExtResource("2_hn15i")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(309, 160)
+
+[node name="npc" parent="." instance=ExtResource("3_31rim")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(180, 184)
+
+[node name="npc2" parent="." instance=ExtResource("4_wtljo")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(617, 273)
+
+[node name="npc3" parent="." instance=ExtResource("5_2dibf")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(557, 61)
+
+[node name="npc4" parent="." instance=ExtResource("6_cfl4u")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(151, 209)
+
+[node name="npc11" parent="." instance=ExtResource("6_cfl4u")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(629, 241)
+
+[node name="npc5" parent="." instance=ExtResource("7_e2y1k")]
+z_index = 1
+position = Vector2(497, 299)
+
+[node name="npc6" parent="." instance=ExtResource("8_0t4x5")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(611, 135)
+
+[node name="npc10" parent="." instance=ExtResource("8_0t4x5")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(575, 339)
+
+[node name="npc7" parent="." instance=ExtResource("9_ggyvo")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(548, 168)
+
+[node name="npc8" parent="." instance=ExtResource("9_ggyvo")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(264, 343)
+
+[node name="npc9" parent="." instance=ExtResource("10_bqhhf")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(228, 345)
+
+[node name="npc12" parent="." instance=ExtResource("5_2dibf")]
+position = Vector2(48, 7)
+
+[node name="npc13" parent="." instance=ExtResource("8_0t4x5")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(208, 208)
+
+[node name="npc14" parent="." instance=ExtResource("7_e2y1k")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(446, 27)
+
+[node name="npc15" parent="." instance=ExtResource("11_1erer")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(55, 309)
+
+[node name="npc16" parent="." instance=ExtResource("8_0t4x5")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(63, 283)
+
+[node name="npc17" parent="." instance=ExtResource("3_31rim")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(525, 70)
+
+[node name="npc18" parent="." instance=ExtResource("11_1erer")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(414, 188)
+
+[node name="npc19" parent="." instance=ExtResource("9_ggyvo")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(378, 195)
+
+[node name="npc20" parent="." instance=ExtResource("5_2dibf")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(406, 24)

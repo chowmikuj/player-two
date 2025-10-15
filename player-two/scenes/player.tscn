@@ -398,5 +398,6 @@ animation = &"idle_front"
 frame_progress = 0.5639174
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 2
 drag_horizontal_enabled = true
 drag_vertical_enabled = true

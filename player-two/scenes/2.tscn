@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://d4wms31c5qq2"]
+
+[ext_resource type="PackedScene" uid="uid://1wre0js0gt8m" path="res://scenes/lan.tscn" id="1_fbha2"]
+[ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_ui1gg"]
+[ext_resource type="PackedScene" uid="uid://b6phagydgrm0s" path="res://scenes/npcs/npc3.tscn" id="3_2fnby"]
+[ext_resource type="PackedScene" uid="uid://cqc0gqmca8eyp" path="res://scenes/npcs/npc6.tscn" id="4_c68ry"]
+[ext_resource type="PackedScene" uid="uid://da7ks7ndemub8" path="res://scenes/npcs/npc7.tscn" id="5_7hqdd"]
+[ext_resource type="PackedScene" uid="uid://chtrocjqtnfl" path="res://scenes/npcs/npc8.tscn" id="6_ufdk5"]
+[ext_resource type="PackedScene" uid="uid://bpy0t0bh0eeid" path="res://scenes/npcs/npc.tscn" id="7_712et"]
+[ext_resource type="PackedScene" uid="uid://cc6o8nbft11k1" path="res://scenes/npcs/npc10.tscn" id="8_1gqc0"]
+[ext_resource type="PackedScene" uid="uid://crrxxl585kuwu" path="res://scenes/npcs/npc11.tscn" id="9_c68ry"]
+
+[node name="2" type="Node2D"]
+y_sort_enabled = true
+
+[node name="lan" parent="." instance=ExtResource("1_fbha2")]
+
+[node name="player" parent="." instance=ExtResource("2_ui1gg")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(103, 175)
+
+[node name="npc" parent="." instance=ExtResource("3_2fnby")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(209, 214)
+
+[node name="npc2" parent="." instance=ExtResource("4_c68ry")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(57, 190)
+
+[node name="npc3" parent="." instance=ExtResource("5_7hqdd")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(53, 253)
+
+[node name="npc4" parent="." instance=ExtResource("6_ufdk5")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(178, 173)
+
+[node name="npc5" parent="." instance=ExtResource("6_ufdk5")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(269, 44)
+
+[node name="npc6" parent="." instance=ExtResource("7_712et")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(272, 183)
+
+[node name="npc7" parent="." instance=ExtResource("8_1gqc0")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(116, 82)
+
+[node name="npc8" parent="." instance=ExtResource("9_c68ry")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(69, 30)
+
+[node name="npc9" parent="." instance=ExtResource("3_2fnby")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(50, 146)
