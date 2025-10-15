@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d4wms31c5qq2"]
+[gd_scene load_steps=11 format=3 uid="uid://d4wms31c5qq2"]
 
 [ext_resource type="PackedScene" uid="uid://1wre0js0gt8m" path="res://scenes/lan.tscn" id="1_fbha2"]
 [ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_ui1gg"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bpy0t0bh0eeid" path="res://scenes/npcs/npc.tscn" id="7_712et"]
 [ext_resource type="PackedScene" uid="uid://cc6o8nbft11k1" path="res://scenes/npcs/npc10.tscn" id="8_1gqc0"]
 [ext_resource type="PackedScene" uid="uid://crrxxl585kuwu" path="res://scenes/npcs/npc11.tscn" id="9_c68ry"]
+[ext_resource type="PackedScene" uid="uid://iww5pws4xx4e" path="res://scenes/changer.tscn" id="10_7hqdd"]
 
 [node name="2" type="Node2D"]
 y_sort_enabled = true
@@ -64,3 +65,9 @@ position = Vector2(69, 30)
 z_index = 2
 y_sort_enabled = true
 position = Vector2(50, 146)
+
+[node name="changer" parent="." instance=ExtResource("10_7hqdd")]
+offset_left = 338.0
+offset_top = -5.0
+offset_right = 338.0
+offset_bottom = -5.0

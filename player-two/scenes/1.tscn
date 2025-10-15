@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dsmgky7bd4mak"]
+[gd_scene load_steps=14 format=3 uid="uid://dsmgky7bd4mak"]
 
 [ext_resource type="PackedScene" uid="uid://blc6b81rehix7" path="res://scenes/arcade.tscn" id="1_i3c8t"]
 [ext_resource type="PackedScene" uid="uid://cqexkwef4u7t5" path="res://scenes/player.tscn" id="2_hn15i"]
@@ -11,9 +11,23 @@
 [ext_resource type="PackedScene" uid="uid://chtrocjqtnfl" path="res://scenes/npcs/npc8.tscn" id="9_ggyvo"]
 [ext_resource type="PackedScene" uid="uid://dojaxfac6ks22" path="res://scenes/npcs/npc9.tscn" id="10_bqhhf"]
 [ext_resource type="PackedScene" uid="uid://da7ks7ndemub8" path="res://scenes/npcs/npc7.tscn" id="11_1erer"]
+[ext_resource type="PackedScene" uid="uid://iww5pws4xx4e" path="res://scenes/changer.tscn" id="12_hn15i"]
+
+[sub_resource type="GDScript" id="GDScript_31rim"]
+script/source = "extends Node2D
+"
 
 [node name="1" type="Node2D"]
 y_sort_enabled = true
+script = SubResource("GDScript_31rim")
+
+[node name="changer" parent="." instance=ExtResource("12_hn15i")]
+z_index = 4
+y_sort_enabled = true
+offset_left = 693.0
+offset_top = 150.0
+offset_right = 693.0
+offset_bottom = 150.0
 
 [node name="Arcade" parent="." instance=ExtResource("1_i3c8t")]
 
